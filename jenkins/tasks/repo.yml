@@ -1,0 +1,7 @@
+---
+- name: Configure YUM repository
+  action: get_url url=http://pkg.jenkins-ci.org/redhat/jenkins.repo dest=/etc/yum.repos.d/jenkins.repo 
+
+- name: Import repository key
+  action: shell rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+

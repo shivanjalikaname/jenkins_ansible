@@ -1,0 +1,6 @@
+---
+- include: prerequisite.yml
+
+- include: repo.yml 
+
+- include: install.yml
